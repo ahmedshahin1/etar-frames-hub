@@ -1,32 +1,35 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Navbar } from "@/components/Navbar";
 import { Car, Bike, Palette, Sparkles, Frame } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logoColored from "@/assets/logo-colored.png";
 
 const Index = () => {
+  const { t } = useTranslation();
+  
   const categories = [
     {
       icon: Car,
-      title: "للسيارات",
+      title: t('categories.cars'),
       description: "إطارات مخصصة لسيارتك المميزة",
       href: "/category/cars",
     },
     {
       icon: Bike,
-      title: "للدراجات النارية",
+      title: t('categories.motorbikes'),
       description: "تصاميم فريدة لدراجتك",
       href: "/category/motorbikes",
     },
     {
       icon: Palette,
-      title: "للفنون",
+      title: t('categories.art'),
       description: "إطارات أنيقة للوحاتك الفنية",
       href: "/category/art",
     },
     {
       icon: Frame,
-      title: "متنوع",
+      title: t('categories.misc'),
       description: "شهادات، مرايا، وأكثر",
       href: "/category/misc",
     },
@@ -41,21 +44,21 @@ const Index = () => {
         <div className="container relative z-10">
           <div className="flex flex-col items-center text-center gap-8">
             <img
-              src={logo}
+              src={logoColored}
               alt="ETAR Logo"
-              className="h-32 w-32 rounded-2xl shadow-xl"
+              className="h-32 w-32 drop-shadow-2xl"
             />
             <h1 className="font-cairo font-bold text-4xl lg:text-6xl text-primary-foreground max-w-3xl">
-              أطر مخصصة تعكس شخصيتك
+              {t('home.hero')}
             </h1>
             <p className="text-lg lg:text-xl text-primary-foreground/90 max-w-2xl">
-              صمم إطارك الخاص لسيارتك، دراجتك النارية، أو لوحاتك الفنية
+              {t('home.subtitle')}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="font-cairo">
                 <Link to="/customize">
                   <Frame className="ml-2 h-5 w-5" />
-                  ابدأ التخصيص
+                  {t('home.cta')}
                 </Link>
               </Button>
               <Button
@@ -64,7 +67,7 @@ const Index = () => {
                 className="bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
                 asChild
               >
-                <Link to="/explore">استكشف المنتجات</Link>
+                <Link to="/explore">{t('nav.explore')}</Link>
               </Button>
             </div>
           </div>
@@ -76,7 +79,7 @@ const Index = () => {
       <section className="py-16 lg:py-24">
         <div className="container">
           <h2 className="font-cairo font-bold text-3xl text-center mb-12">
-            تصفح حسب الفئة
+            {t('home.categories')}
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((cat) => {
@@ -113,7 +116,7 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 mb-12">
             <Sparkles className="h-6 w-6 text-accent" />
             <h2 className="font-cairo font-bold text-3xl text-center">
-              الأكثر رواجاً
+              {t('home.trending')}
             </h2>
             <Sparkles className="h-6 w-6 text-accent" />
           </div>

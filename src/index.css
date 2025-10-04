@@ -8,39 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* ETAR Brand Colors - من اللوجو */
-    --brand-green: 168 20% 30%;      /* #3b5b56 */
-    --brand-yellow: 48 100% 68%;     /* #ffde59 */
+    /* ETAR Brand Colors - من اللوجو الجديد */
+    --brand-green: 160 17% 30%;      /* #3C5751 */
+    --brand-yellow: 49 87% 63%;      /* #F2D04C */
     --brand-cream: 0 0% 97%;         /* #f8f8f8 */
     --brand-gray: 200 13% 80%;       /* #c0c6cc */
     
     --background: 0 0% 100%;
-    --foreground: 168 20% 30%;       /* brand green for text */
+    --foreground: 160 17% 30%;       /* brand green for text */
 
     --card: 0 0% 100%;
-    --card-foreground: 168 20% 30%;
+    --card-foreground: 160 17% 30%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 168 20% 30%;
+    --popover-foreground: 160 17% 30%;
 
-    --primary: 168 20% 30%;          /* brand green */
+    --primary: 160 17% 30%;          /* brand green */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 48 100% 68%;        /* brand yellow */
-    --secondary-foreground: 168 20% 30%;
+    --secondary: 49 87% 63%;         /* brand yellow */
+    --secondary-foreground: 160 17% 30%;
 
     --muted: 0 0% 97%;               /* brand cream */
-    --muted-foreground: 168 15% 45%;
+    --muted-foreground: 160 15% 45%;
 
-    --accent: 48 100% 68%;           /* brand yellow */
-    --accent-foreground: 168 20% 30%;
+    --accent: 49 87% 63%;            /* brand yellow */
+    --accent-foreground: 160 17% 30%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 200 13% 80%;           /* brand gray */
     --input: 200 13% 80%;
-    --ring: 168 20% 30%;
+    --ring: 160 17% 30%;
 
     --radius: 0.75rem;
 
@@ -62,33 +62,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 168 20% 15%;
+    --background: 160 17% 15%;
     --foreground: 0 0% 97%;
 
-    --card: 168 20% 20%;
+    --card: 160 17% 20%;
     --card-foreground: 0 0% 97%;
 
-    --popover: 168 20% 20%;
+    --popover: 160 17% 20%;
     --popover-foreground: 0 0% 97%;
 
-    --primary: 48 100% 68%;          /* yellow in dark mode */
-    --primary-foreground: 168 20% 15%;
+    --primary: 49 87% 63%;           /* yellow in dark mode */
+    --primary-foreground: 160 17% 15%;
 
-    --secondary: 168 20% 25%;
+    --secondary: 160 17% 25%;
     --secondary-foreground: 0 0% 97%;
 
-    --muted: 168 20% 25%;
+    --muted: 160 17% 25%;
     --muted-foreground: 200 13% 70%;
 
-    --accent: 48 100% 68%;
-    --accent-foreground: 168 20% 15%;
+    --accent: 49 87% 63%;
+    --accent-foreground: 160 17% 15%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 97%;
 
-    --border: 168 20% 25%;
-    --input: 168 20% 25%;
-    --ring: 48 100% 68%;
+    --border: 160 17% 25%;
+    --input: 160 17% 25%;
+    --ring: 49 87% 63%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
